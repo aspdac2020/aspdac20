@@ -1,0 +1,294 @@
+body {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	text-align: center;
+	font-size: 70%;
+	background-color: #f2f2f2;
+}
+/* Overall Font Style */
+p, ul, ol, li dl, dd, dt{
+	color: #333333;
+	line-height:170%;
+}
+
+ul {
+	list-style-type: square;
+}
+
+em {
+	background-color:#ffffcc;
+	font-style:normal;
+}
+
+h1 {
+	font-family: georgia, Verdana, Arial, Helvetica, sans-serif;
+	margin:0;
+	padding-left:5px;
+	font-size: 120%;
+	border-left:3px solid #ddd;
+}
+
+h2 {
+	font-size: 100%;
+	font-weight: bold;
+	margin: 14px 0 0;
+	border-bottom:1px solid #ddd;
+}
+
+h3 {
+	font-size: 11px;
+	color: #000;
+	font-weight:normal;
+}
+
+h4 {
+	font-size: 110%;
+	font-weight: bold;
+	color: #993333;
+	margin: 14px 0 0;
+}
+
+h6 {
+	font-weight: normal;
+	font-size: 10px;
+	color: #333333;
+                margin-right:10px;
+                float:right;
+}
+
+a:link {
+	color: #666;
+	font-weight: bold;
+}
+
+a:visited {
+	color: #666;
+	font-weight: bold;
+}
+
+a:hover {
+	color: #993333;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+a:active {
+	color: #993333;
+	font-weight: bold;
+}
+
+/* header font style */
+#title {
+	float:right;
+	text-align: left;
+	padding :35px;
+	text-align:right;
+	clear:right;
+}
+
+#title h2 {
+	color:#666;
+	font: 15px Lucida Grande, helvetica, arial, sans-serif;
+	font-weight: bold;
+	border:0;
+	margin-top:2px;
+}
+
+
+#title p {
+	color:#666;
+	font: 12px Lucida Grande, helvetica, arial, sans-serif;
+	font-weight: bold;
+}
+
+/* footer font style */
+#footer {
+	font-size: 10px;
+	text-align: center;
+	color:#fff;
+}
+
+/* Overall Layout */
+#body {
+	width: 708px;
+	margin-right: auto;
+	margin-left: auto;
+	text-align: left;
+}
+#header {
+	background:url(images/top.gif) no-repeat ;
+	width: 708px;
+	height:190px;
+	margin:0;
+	padding:0;
+}
+
+#content {
+	background:url(images/middle.gif) repeat-y ;
+	width: 708px;
+	margin:0;
+	padding:0;
+}
+
+#footer {
+	background:  url(images/bottom.gif) no-repeat  ;
+	width: 708px;
+	height: 54px;
+	margin:0;
+	padding:12px;
+}
+
+.clear {
+  clear: both;
+  height: 10px;
+}
+
+/* inside content layout */
+#sidemenu {
+	width:180px;
+	float: left;
+	margin:0;
+	padding:0;
+}
+
+#main {
+	width:480px;
+	float: right;
+	margin:0;
+	padding:15px 20px 15px 15px;
+}
+
+/* inside content font style */
+#sidemenu {
+	text-align: right;
+	font-size: 11px;
+}
+
+/* inside content menu */
+#navcontainer ul {
+	margin: 10px 0 10px 20px;
+	padding: 0;
+}
+
+#navcontainer li {
+	width: 173px;
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	border-top: 1px solid #ddd;
+}
+
+#navcontainer a {
+	width: 145px;
+	display: block;
+	background: #fafafa;
+	font-weight:normal;
+	margin: 0;
+	padding: 3px 14px;
+}
+
+#navcontainer a:link, #navcontainer a:visited {
+	color: #000;
+	text-decoration: none;
+}
+
+#navcontainer a:hover {
+        color: #fff;
+	background-color: #993333;
+}
+
+#navcontainer a.active:visited  {
+	color: #993333;
+	text-decoration: none;
+	font-weight: bold;
+	background-image:  url(images/bg.gif);
+}
+
+.bgtitle {
+	font-size: 12px;
+	font-weight: bold;
+	color: #FFFFFF;
+	background-color: #993333;
+	text-align: center;
+}
+
+.bgtitle a:link{
+	font-size: 12px;
+	font-weight: bold;
+	color: #FFFFFF;
+	background-color: #993333;
+	text-align: center;
+}
+.bgtitle a:visited{
+	font-size: 12px;
+	font-weight: bold;
+	color: #FFFFFF;
+	background-color: #993333;
+	text-align: center;
+}
+.bgleft {
+	font-size: 11px;
+	background-color: #FEC6C5;
+}
+.bgleft1 {
+	font-size: 11px;
+	background-color: #FEE1E0;
+	text-align: center;
+}
+.bgleft2 {
+	background-color: #FFF1F0;
+	font-size: 11px;
+	text-align: center;
+}
+.bgleft3 {
+	font-size: 11px;
+	background-color: #E0E0E0;
+	text-align: center;
+}
+.highlight {
+	background-color: #FEE1E0;
+	border-top: 1px dashed #E0E0E0;
+	border-bottom: 1px dashed #E0E0E0;
+	font-size : 12px;
+	font-weight: bold;
+	padding : 5px;
+	}
+.ptitle {
+	font-size: 11px;
+	background-color: #FEE1E0;
+	padding:5px;
+	margin:20px 0 0 0 ;
+}
+.pexplain {
+	font-size: 11px;
+	background-color: #FFF1F0;
+	padding:5px;
+	margin:0;
+}
+	.keynoteimage {
+		padding-right:0px;
+		float:left;
+		margin-right:10px;;
+		height:100%;
+}
+.bgtitle1 {
+	font-size: 10px;
+	font-weight: bold;
+	background-color: #FEE1E0;
+                width: 50px;
+}
+.bgtitle2 {
+	font-size: 10px;
+	font-weight: bold;
+	background-color: #FFF1F0;
+                width: 50px;
+}
+.bgcontent1 {
+	font-size: 11px;
+	font-weight: normal;
+	background-color: #FEE1E0;
+}
+.bgcontent2 {
+	font-size: 11px;
+	font-weight: normal;
+	background-color: #FFF1F0;
+}
