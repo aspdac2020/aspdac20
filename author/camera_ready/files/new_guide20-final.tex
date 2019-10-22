@@ -1,0 +1,240 @@
+\documentclass[conference]{IEEEtran}
+\usepackage{geometry}
+\geometry{letterpaper,left=1.75cm,right=1.75cm,top=1.5cm,bottom=1.5cm}
+\begin{document}
+%\IEEEoverridecommandlockouts
+
+\title{\Large\bf Preparation GUIDE for Camera-Ready Manuscript\\~\\
+	\large\bf Preparation of Papers in Two-Column Format\\
+	for the ASP-DAC 2020 (\LaTeX version)}
+
+	\author{\normalsize
+	\begin{tabular}[t]{c@{\extracolsep{8em}}c}
+		\large Author Name& \large Coauthor Name \\
+		\\
+		Author Department & Coauthor Department \\
+		Author Institute  & Coauthor Institute \\
+		City, ST~~zipcode & City, ST~~zipcode\\
+		Tel: 123-456-7890 & Tel: +81-3-333-1234\\
+		Fax: 123-456-0987 & Fax: +81-3-333-5678\\
+		e-mail: aaa@bbb.ccc.ddd & e-mail eee@ffff.ggg.hh\\
+\end{tabular}}
+
+% use for special paper notices
+%\IEEEspecialpapernotice{(Invited Paper)}
+
+% make the title area
+\maketitle
+
+
+
+\makeatletter
+\def\ps@IEEEtitlepagestyle{%
+  \def\@oddfoot{\mycopyrightnotice}%
+  \def\@evenfoot{}%
+}
+\makeatother
+\def\mycopyrightnotice{%
+  \begin{minipage}{\textwidth}
+    \footnotesize
+    xxx-x-xxxx-xxxx-x/xx/\$31.00~\copyright~20xx IEEE \hfill\\~\\
+  \end{minipage}
+  \gdef\mycopyrightnotice{}% just in case
+}
+
+
+
+
+
+{\small\bf Abstract---
+Abstract is a brief (50-80 word) synopsis of your paper.
+The purpose is to provide a quick outline of your
+presentation, giving the reader an overview of the
+research. It must be fit within the size allowed, which is
+about 3 inches or 7.5 centimeters.}
+
+
+
+
+\section{Introduction}
+
+These introductions give you basic guidelines for preparing 
+camera-ready papers for the ASP-DAC 2020.
+
+The instructions assume that you have computer that can generate an 
+IEEE Xplore-compatible PDF file or any source file(s) which can be 
+converted to PDF using IEEE PDF eXpress. 
+
+These instructions have been prepared in the preferred format. For items
+not addressed here, please refer to recent issues of IEEE Transactions
+and simulate, as closely as possible.
+
+\section{How to Format the Page}
+
+\subsection{Paper Format} 
+Prepare camera-ready paper in full size format, on 8.5'' $\times$ 11'' 
+(US Letter size) paper.
+
+{\bf The width and height of the main text (including figures, tables, and 
+	footnotes, if any) is 181 mm (7.13 inches) and 250 mm (9.84 inches), 
+	respectively.}  Adjust the margins around the main text as follows;
+
+\begin{itemize}
+	\item Top and bottom margins: 14.7 mm (0.58 inches).
+	\item Left and right margins: 17.45 mm (0.685 inches).
+\end{itemize}
+
+There are two columns, 88 mm (3.465 inches) wide each, with 5 mm (0.2 inches) 
+space between them (i.e., $88\mbox{ mm}\times2+5\mbox{ mm}=181\mbox{ mm}$).
+
+You should left- and right-justify your columns. On the last page of
+your paper, try to adjust the lengths of the two columns so that they
+are the same. Use automatic hyphenation if you have it and check
+spelling.
+
+%{\bf Number each of you submitted pages at the top, right corner, in
+%non-photographic light blue pencil.}
+
+\subsection{Fonts}
+The best results will be obtained if your computer word-processor has
+several font sizes. Try to follow the font sizes specified in Table I as
+best as you can. As an aid to gauging font size, 1 point is about
+0.35 mm. Use a proportional, serif font such as Times of Dutch Roman.
+
+\begin{table}[tb]
+	\caption{Fonts for Camera-Ready Papers}
+	\begin{minipage}{8cm}
+		\def\arraystretch{1.5}\tabcolsep 2pt
+		\def\thefootnote{a}\footnotesize
+		\begin{tabular}{l@{~}l@{~~~}l}
+			\hline
+			\parbox[c]{7mm}{Font\newline Size} & Style & Text\\
+			\hline
+			14pt&bold     &Paper title\\
+			12pt&         &Authors' names\\
+			10pt&         &Authors' affiliations, main text, equations,\\[-5pt]
+			&         &first letters in section titles\footnotemark[1]\\
+			10pt&italic   &Subheddings\\
+			~9pt&bold     &Abstract\\
+			~8pt&         &Section titles\footnotemark[1], table
+			names\footnotemark[1], first letters in table\\[-5pt]
+			&         &captions\footnotemark[1],
+			tables, figure captions, references,\\[-5pt]
+			&         &footnotes, text subscripts and superscripts\\
+			~6pt&         &Table captions\footnotemark[1], table superscripts\\
+			\hline
+		\end{tabular}
+		\footnotetext[1]{Uppercase}
+	\end{minipage}
+\end{table}
+
+\section{Figures and Tables}
+Position figures and tables at the tops and bottoms of columns. Avoid
+placing them in the middle of columns. Large figures and tables may
+span across both columns. Figure captions should be below the figures;
+table captions should be above the tables. Avoid placing figures and
+tables before their first mention in the text. Use the abbreviation
+``Fig.1'', even at the beginning of a sentence.
+
+\begin{figure}[tb]
+	\begin{center}
+		\begin{minipage}{5cm}
+			$.$\hrulefill $.$\\$|$\hfill $|$\\$|$\hfill $|$\\$|$\hfill $|$\\
+			$|$\hfill this is \hfill $|$\\
+			$|$\hfill a sample \hfill $|$\\
+			$|$\hfill  figure  \hfill $|$\\
+			$|$\hfill $|$\\$|$\hfill $|$\\$|$\hfill $|$\\$.$\hrulefill $.$\\
+		\end{minipage}
+		\caption{This is a sample figure. Captions exceeding
+			one line are arranged like this.}
+	\end{center}
+\end{figure}
+
+{\bf
+	To meet the requirements for IEEE Xplore, the paper's graphics
+	should have resolutions of 600dpi for monochrome, 300 dpi for 
+	grayscale, and 300 dpi for color.}
+
+\section{Helpful Hints}
+
+\subsection{References}
+List and number all references at the end of the paper. When referring
+to them in the text, type the corresponding reference number in the
+parentheses as shown at the end of this sentence \cite{key}. Number
+the citations consecutively. The sentence punctuation follows the
+parentheses. Do not use ``Ref.\cite{baz}'' or
+``reference\cite{baz}'' except at the beginning of a sentence.
+
+\subsection{Footnotes}
+Number the footnotes separately in superscripts. Place the actual
+footnote at the bottom of the column in which it is cited. Do not put
+footnotes in the reference list.
+
+\subsection{Authors names}
+
+Give all authors' names; do not use ``et al'' unless there are six
+authors or more. Papers that have not been published, even if they have
+been submitted for publication, should be cited as
+``unpublished''\cite{unpub}.  Papers that have been accepted for
+publication should be cited as ``in press''\cite{inpress}.
+Capitalize only the first word in a paper title, except for proper nouns
+and element symbols.
+
+For papers published in translation journals, please give the English
+citation first, followed by the original foreign language
+citations\cite{trans}.
+
+\subsection{Notice for \LaTeX\ users}
+
+If you use \LaTeX\ to create your camera-ready paper, we recommend you
+to use IEEE PDF eXpress (or {\tt dvipdfm}) to produce PDF files from dvi 
+files. If you cannot use it, please use Type1 fonts instead of ugly Type3 fonts!
+
+\section{Summary and Conclusions}
+
+This template can be downloaded through the ASP-DAC 2020 web site
+(http://www.aspdac.com/). If you have any problem, please contact ASP-DAC
+2020 publication chair\\
+(wei.zhang@ust.hk).
+
+%this is how to do an unnumbered subsection 
+\section*{\sc Acknowledgments}
+This article was written by referring to {\em ``Author's guide --
+	Preparation of Papers in Two-Column Format for VLSI Symposia on
+	Technology and Circuits''}, the {\em ``Preparation of Papers in
+	Two-Column Format for the Proceedings of the 32nd ACM/IEEE Design
+	Automation Conference''} written by Ann Burgmeyer, IEEE and {\em ``the
+	template for producing IEEE-format articles using \LaTeX''}, written by
+Matthew Ward, Worcester Polytechnic Institute.
+
+\begin{thebibliography}{9}
+	\footnotesize
+	\bibitem{key}
+	I. M. Author,
+	``Some related article I wrote,''
+	{\em Some Fine Journal}, vol. 17, pp. 1--100, 1987.
+	
+	\bibitem{baz}
+	A. N. Expert,
+	{\em A Book He Wrote,}
+	His Publisher, 1989.
+	
+	\bibitem{unpub}
+	M. Smith,
+	``Title of paper optional here,''
+	unpublished.
+	
+	\bibitem{inpress}
+	K. Rose,
+	``Title of paper with only first word capitalized,''	% bug fixed by M. Imai
+	in press.
+	
+	\bibitem{trans}
+	T. Murayama,
+	``Title of paper published in translation journals,''	% bug fixed by M. Imai
+	{\em Some English Journal}, vol. 17, pp. 1--100, 1995.	% bug fixed by M. Imai
+	({\em Original Foreign Journal, vol. 1, pp. 100-200, 1993}.)	% ditto
+	
+\end{thebibliography}
+
+\end{document}
